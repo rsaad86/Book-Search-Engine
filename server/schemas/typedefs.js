@@ -1,5 +1,7 @@
+//import the graph query language function
 const { gql } = require("apollo-server-express");
 
+//define our gql typedefs
 const typeDefs = gql`
   type User {
     _id: ID
@@ -39,4 +41,5 @@ const typeDefs = gql`
   }
 `;
 
+//export the typedefs
 module.exports = typeDefs;
